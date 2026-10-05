@@ -1,0 +1,147 @@
+
+/* Reset CSS de Eric Meyer - versão reduzida */
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+} */
+
+/* Para aprofundar em CSS: www.w3schools.com/css */
+
+
+/* Definição de Fontes */
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Bold.ttf")
+    format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Desktop */
+body{
+    background-color: #0E1014;
+    color: #FFFFFF;
+}
+header img{
+    display: block;
+    margin: 75px 1350px 0 360px; 
+    /*sentido horario: top, right, botton, left*/
+}
+h1{
+    font-size: 64px;
+    /* font-family: serif;
+    font-family: sans-serif;
+    font-family: monospace;
+    font-family: cursive;
+    font-family: fantasy; */
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+p{
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+}
+/* h1, p, a{
+    color: #FFFFFF;
+} */
+h1 span{
+    color: #9747ff;
+}
+a{
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747ff;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    /* padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 48px;
+    padding-right: 48px; */
+    border-radius: 36px; /*deixa redondo*/
+    margin: 40px auto; /*40 acima e baixo e auto para os lados*/
+}
+a:hover{
+    background-color: #8233e8;
+}
+section img{
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+@media(max-width: 768px){
+    header img{
+        margin: 65px 0 0 60px;
+    }
+    p{
+        width: 648px;
+    } 
+}
+
+@media(max-width: 376px){
+    body{
+        background-color: gray;
+    }
+    
+    header img{
+        margin: 32px 0 0 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        width: 340px;
+    } 
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+    section img{
+        width: 340px;
+        height: 230px;
+    }
+}
